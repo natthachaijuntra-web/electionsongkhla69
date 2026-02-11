@@ -181,10 +181,10 @@
     </div>
 
     <div class="ticker-bar">
-        <div class="ticker-title">ข่าวด่วน</div>
+        <div class="ticker-title">tkntj</div>
         <div style="flex-grow:1; overflow:hidden;">
             <div class="ticker-text">
-                เกาะติดผลการนับคะแนนเลือกตั้ง ส.ส. สงขลา ล่าสุด ... ผลคะแนนนี้เป็นเพียงผลอย่างไม่เป็นทางการ ... โปรดตรวจสอบประกาศรับรองผลจาก กกต. อีกครั้ง ... รายงานสดจากศูนย์ข้อมูลกลาง
+                ผลการลงคะแนนอย่างไม่เป็นทางการ นับแล้ว 95% ณ วันที่ 11 กุมภาพันธุ์ 2569
             </div>
         </div>
     </div>
@@ -197,7 +197,7 @@
         <div class="modal-clean" style="max-width: 380px; margin-top: 20vh;">
             <div class="p-5 text-center">
                 <h4 class="fw-bold mb-4">เข้าสู่ระบบ</h4>
-                <input type="password" id="adminPass" class="form-control text-center mb-3" placeholder="รหัสผ่าน (1234)">
+                <input type="password" id="adminPass" class="form-control text-center mb-3" placeholder="รหัสผ่าน">
                 <button class="btn btn-primary w-100 mb-2" onclick="checkLogin()">ยืนยัน</button>
                 <button class="btn btn-link text-muted" onclick="closeModals()">ยกเลิก</button>
             </div>
@@ -410,7 +410,7 @@
         // --- ADMIN ---
         function openLogin() { document.getElementById('loginModal').style.display='block'; }
         function closeModals() { document.getElementById('loginModal').style.display='none'; document.getElementById('adminModal').style.display='none'; }
-        function checkLogin() { if(document.getElementById('adminPass').value==='1234'){ closeModals(); document.getElementById('adminModal').style.display='block'; } else alert('รหัสผ่านไม่ถูกต้อง'); }
+        function checkLogin() { if(document.getElementById('adminPass').value==='08022569'){ closeModals(); document.getElementById('adminModal').style.display='block'; } else alert('รหัสผ่านไม่ถูกต้อง'); }
         function showTab(id) { document.getElementById('tab-scores').style.display = id==='scores'?'block':'none'; document.getElementById('tab-logos').style.display = id==='logos'?'block':'none'; }
 
         function buildAdminForm() {
